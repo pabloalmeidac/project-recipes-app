@@ -6,7 +6,7 @@ import { Card } from 'react-bootstrap';
 const RecipesCards = ({ nameValue, indexValue, thumbValue }) => (
   <Card
     data-testid={ `${indexValue}-recipe-card` }
-    style={ { width: '18rem' } }
+    style={ { width: '18rem', margin: '0.5rem' } }
   >
     <Card.Body>
       <Card.Img
@@ -14,12 +14,19 @@ const RecipesCards = ({ nameValue, indexValue, thumbValue }) => (
         variant="top"
         src={ thumbValue }
       />
-      <Card.Title
+      <h5
+        className="card-title"
         data-testid={ `${indexValue}-card-name` }
         style={ { marginTop: '10px' } }
       >
         { nameValue }
-      </Card.Title>
+      </h5>
+      {/* <Card.Title
+        data-testid={ `${indexValue}-card-name` }
+        style={ { marginTop: '10px' } }
+      >
+        { nameValue }
+      </Card.Title> */}
     </Card.Body>
   </Card>
 );

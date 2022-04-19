@@ -109,7 +109,7 @@ const DetailsRecipePage = () => {
             alt=""
             data-testid="recipe-photo"
             className="recipe-image"
-            fluid
+            /* fluid */
           />
         </Col>
       </Row>
@@ -202,7 +202,7 @@ const DetailsRecipePage = () => {
         <Col>
           <div className="d-grid gap-2 btn-container">
             <Button
-              style={ { width: '100%', borderRadius: '0' } }
+              style={ { width: '100%', border: 'none', backgroundColor: '#ea1d2c' } }
               className="fixed-bottom"
               variant="success"
               type="button"

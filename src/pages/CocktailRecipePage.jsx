@@ -69,7 +69,7 @@ const CocktailRecipePage = () => {
       </div>
 
       {/** Mostra 5 botões com as primeiras cateforias da requisição */}
-      <div>
+      <div className="menu-category">
         <button
           data-testid="All-category-filter"
           type="button"
@@ -96,7 +96,7 @@ const CocktailRecipePage = () => {
         {exploredIngredient !== '' && `Filtro de ingrediente: ${exploredIngredient}`}
       </h2>
       {/** Renderiza os Cards com as Comidas */}
-      <div style={ { display: 'flex', flexWrap: 'wrap' } }>
+      <div className="container-make">
         {
           recipes
             .slice(0, sizeListRecipes)

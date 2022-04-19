@@ -81,6 +81,7 @@ const LoginPage = ({ history }) => {
             variant="success"
             type="button"
             size="lg"
+            style={ { backgroundColor: '#ea1d2c', border: '#ea1d2c' } }
             disabled={ btnDisabledStatus }
             onClick={ handleClick }
             data-testid="login-submit-btn"
