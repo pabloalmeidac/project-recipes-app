@@ -30,11 +30,13 @@ button {
   border-radius: 4px;
   margin: 10px;
   padding: 6px;
+  border-bottom:  2px solid transparent;
+
 }
 
 button:hover {
   color: #ea1d2c;
-  border-bottom:  2px solid #ea1d2c;
+  border-color: #ea1d2c;
 }
 
 a {
