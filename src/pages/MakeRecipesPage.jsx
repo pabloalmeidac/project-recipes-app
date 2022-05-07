@@ -8,7 +8,14 @@ const MakeRecipesPage = () => {
   const [filter, setFilter] = useState('');
   const { searchOrHeader } = useContext(RecipesContext);
   const doneRecipes = JSON.parse(localStorage.getItem('doneRecipes'));
-
+  const styles = { 
+    padding: '10px', 
+    borderRadius: '10px', 
+    background: '#f0371d', 
+    border: '#f0371d', 
+    margin: '10px',
+    color: 'white' 
+  };
   /** Seta o tipo de filtro no estado */
   const handleClickFilter = (filterValue) => {
     setFilter(filterValue);
@@ -24,6 +31,7 @@ const MakeRecipesPage = () => {
           data-testid="filter-by-all-btn"
           type="button"
           onClick={ () => handleClickFilter('') }
+          style={ styles }
         >
           All
         </button>
@@ -31,6 +39,7 @@ const MakeRecipesPage = () => {
           data-testid="filter-by-food-btn"
           type="button"
           onClick={ () => handleClickFilter('comida') }
+          style={ styles }
         >
           Food
         </button>
@@ -38,6 +47,7 @@ const MakeRecipesPage = () => {
           data-testid="filter-by-drink-btn"
           type="button"
           onClick={ () => handleClickFilter('bebida') }
+          style={ styles }
         >
           Driks
         </button>

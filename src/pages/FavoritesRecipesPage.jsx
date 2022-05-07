@@ -5,7 +5,14 @@ import SearchBar from '../components/Searchbar';
 import RecipesContext from '../context/RecipesContext';
 
 const START_FAVORITES = JSON.parse(localStorage.getItem('favoriteRecipes'));
-
+const styles = { 
+  padding: '10px', 
+  borderRadius: '10px', 
+  background: '#f0371d', 
+  border: '#f0371d', 
+  margin: '10px',
+  color: 'white' 
+};
 const FavoriteRecipesPage = () => {
   const { searchOrHeader } = useContext(RecipesContext);
   const [favoriteRecipes, setFavoriteRecipes] = useState(START_FAVORITES);
@@ -24,6 +31,7 @@ const FavoriteRecipesPage = () => {
           data-testid="filter-by-all-btn"
           type="button"
           onClick={ () => handleClickFilter('') }
+          style={ styles }
         >
           All
         </button>
@@ -31,6 +39,7 @@ const FavoriteRecipesPage = () => {
           data-testid="filter-by-food-btn"
           type="button"
           onClick={ () => handleClickFilter('comida') }
+          style={ styles }
         >
           Food
         </button>
@@ -38,6 +47,7 @@ const FavoriteRecipesPage = () => {
           data-testid="filter-by-drink-btn"
           type="button"
           onClick={ () => handleClickFilter('bebida') }
+          style={ styles }
         >
           Drinks
         </button>
