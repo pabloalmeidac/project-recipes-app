@@ -1,7 +1,6 @@
 # Recipes App
 ![GitHub language count](https://img.shields.io/github/languages/count/pabloalmeidac/recipes-app)
 ![GitHub top language](https://img.shields.io/github/languages/top/pabloalmeidac/recipes-app)
-![Scrutinizer code quality (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/quality/g/pabloalmeidac/recipes-app)
 
 # Sobre o projeto
 
@@ -19,6 +18,9 @@ O objetivo do projeto foi desenvolver um app de receitas com layout de dispositi
 
 # Exemplos
 
+![login](https://raw.githubusercontent.com/pabloalmeidac/recipes-app/pabloalmeidac/src/images/recipes-app-login.png)
+
+![explore](https://raw.githubusercontent.com/pabloalmeidac/recipes-app/pabloalmeidac/src/images/recipes-app-explore.png)
 
 
 
