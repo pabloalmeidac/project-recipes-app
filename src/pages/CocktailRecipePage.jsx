@@ -6,6 +6,7 @@ import RecipesContext from '../context/RecipesContext';
 import Footer from '../components/Footer';
 import RecipesCards from '../components/RecipesCards';
 import recipeAPI from '../services/recipeAPI';
+import './styles/RecipePage.css'
 
 const CocktailRecipePage = () => {
   const {

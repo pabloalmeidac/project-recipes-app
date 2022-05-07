@@ -19,6 +19,5 @@
 }
 
 .recipe-image {
-  max-width: 440px;
-  max-height:150px;
+  max-width: 100vw;
 }

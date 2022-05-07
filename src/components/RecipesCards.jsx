@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'react-bootstrap';
+import './styles/RecipesCards.css';
 
 /** Recebe Valores via Props de Bebidas e Comidas */
 const RecipesCards = ({ nameValue, indexValue, thumbValue }) => (
@@ -21,12 +22,6 @@ const RecipesCards = ({ nameValue, indexValue, thumbValue }) => (
       >
         { nameValue }
       </h5>
-      {/* <Card.Title
-        data-testid={ `${indexValue}-card-name` }
-        style={ { marginTop: '10px' } }
-      >
-        { nameValue }
-      </Card.Title> */}
     </Card.Body>
   </Card>
 );

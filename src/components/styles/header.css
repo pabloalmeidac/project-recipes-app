@@ -1,0 +1,30 @@
+.header-container {
+  text-align: center;
+  background-color:  #f0371d;
+  padding: 0.5rem 0;
+}
+.icon-white {
+  filter: invert(100%);
+}
+
+.header-container button {
+  background-color: #f0371d;
+  border: #f0371d;
+}
+
+.header-container-items {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+  gap: 1rem;
+}
+
+.title {
+  padding-top: 4px;
+  color: #fff
+}
+
+/* .menu {
+  width: 2rem;
+  filter: invert(100%);
+} */

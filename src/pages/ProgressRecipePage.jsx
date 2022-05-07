@@ -165,7 +165,7 @@ const DetailsRecipePage = () => {
         <Col>
           <div className="d-grid gap-2 btn-container">
             <Button
-              style={ { width: '100%', borderRadius: '0' } }
+              style={ { width: '100%', borderRadius: '0', background: '#f0371d', border: '#f0371d' } }
               className="fixed-bottom"
               variant="success"
               disabled={ buttonDisable.disabled }

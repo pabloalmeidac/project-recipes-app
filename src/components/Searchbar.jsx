@@ -2,6 +2,7 @@ import { useHistory } from 'react-router-dom';
 import React, { useContext, useState } from 'react';
 // import { Redirect } from 'react-router-dom';
 import RecipesContext from '../context/RecipesContext';
+import './styles/SearchBar.css';
 // import RecipeCard from './RecipeCard';
 
 // Criado os services api separados para comida e bebida
@@ -66,65 +67,65 @@ function SearchBar() {
   }
 
   return (
-    <div>
-      <h1>sou o SearchBar</h1>
-      <input
-        type="text"
-        data-testid="search-input"
-        value={ inputValue }
-        onChange={ (e) => setInputValue(e.target.value) }
-        // maxLength={ maxLength }
-      />
-      <label htmlFor="ingredients-search">
-        Ingredientes:
+    <div className="search-container">
+      <div className="search-container-searchbar">
         <input
-          data-testid="ingredient-search-radio"
-          name="option-radio"
-          className="ingredients-search"
-          type="radio"
-          value="ingredients"
-          onClick={ (e) => setOption(e.target.value) }
-          // onChange={ checkIfFirstLetter }
+          type="text"
+          data-testid="search-input"
+          value={ inputValue }
+          onChange={ (e) => setInputValue(e.target.value) }
         />
-      </label>
+      </div>
+      <div className='search-container-labels'>
+        <label htmlFor="ingredients-search">
+          <input
+            data-testid="ingredient-search-radio"
+            name="option-radio"
+            id="ingredients-search"
+            type="radio"
+            value="ingredients"
+            onClick={ (e) => setOption(e.target.value) }
+            // onChange={ checkIfFirstLetter }
+          />
+          Ingredientes
+        </label>
 
-      <label htmlFor="name-search">
-        Nome:
-        <input
-          data-testid="name-search-radio"
-          name="option-radio"
-          className="name-search"
-          type="radio"
-          value="name"
-          onClick={ (e) => setOption(e.target.value) }
-          // onChange={ checkIfFirstLetter }
-        />
-      </label>
+        <label htmlFor="name-search">
+          <input
+            data-testid="name-search-radio"
+            name="option-radio"
+            id="name-search"
+            type="radio"
+            value="name"
+            onClick={ (e) => setOption(e.target.value) }
+            // onChange={ checkIfFirstLetter }
+          />
+          Nome
+        </label>
 
-      <label htmlFor="first-letter-search">
-        Primeira Letra:
-        <input
-          data-testid="first-letter-search-radio"
-          name="option-radio"
-          className="first-letter-search"
-          type="radio"
-          value="first-letter"
-          onClick={ (e) => setOption(e.target.value) }
-          // onChange={ checkIfFirstLetter }
-        />
-      </label>
-
-      <button
-        type="button"
-        data-testid="exec-search-btn"
-        onClick={ onClickButton }
-      >
-        Botão de Busca
-
-      </button>
-
+        <label htmlFor="first-letter-search">
+          <input
+            data-testid="first-letter-search-radio"
+            name="option-radio"
+            id="first-letter-search"
+            type="radio"
+            value="first-letter"
+            onClick={ (e) => setOption(e.target.value) }
+            // onChange={ checkIfFirstLetter }
+          />
+          Primeira Letra
+        </label>
+      </div>
+      <div className="search-container-button">
+        <button
+          type="button"
+          data-testid="exec-search-btn"
+          onClick={ onClickButton }
+        >
+          Buscar
+        </button>
+      </div>
     </div>
-
   );
 }
 

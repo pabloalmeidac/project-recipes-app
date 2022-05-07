@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @keyframes loading {
 
   0% {
@@ -22,38 +26,4 @@
   text-align: center;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-button {
-  border: none;
-  background-color: #fff;
-  border-radius: 4px;
-  margin: 10px;
-  padding: 6px;
-  border-bottom:  2px solid transparent;
-
-}
-
-button:hover {
-  color: #ea1d2c;
-  border-color: #ea1d2c;
-}
-
-a {
-  text-decoration: none !important;
-}
-
-.card-title {
-  color: #ea1d2c;
-}
-
-.container-meal, .container-make {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 60px;
-}
-
-.menu-category {
-  text-align: center;
 }

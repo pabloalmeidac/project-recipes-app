@@ -6,6 +6,7 @@ import RecipesCards from '../components/RecipesCards';
 import RecipesContext from '../context/RecipesContext';
 import Footer from '../components/Footer';
 import recipeAPI from '../services/recipeAPI';
+import './styles/RecipePage.css'
 
 const MealRecipePage = () => {
   const {

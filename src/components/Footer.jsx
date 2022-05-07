@@ -10,23 +10,21 @@ const Footer = () => (
     <Button
       href="/bebidas"
       type="button"
-      className="btn btn-light"
+      className="teste"
     >
-      <img src={ drinkIcon } alt="bebidas" data-testid="drinks-bottom-btn" />
+      <img src={ drinkIcon } alt="bebidas" data-testid="drinks-bottom-btn" className="icon-white-footer"/>
     </Button>
     <Button
       href="/explorar"
       type="button"
-      className="btn btn-light"
     >
-      <img src={ exploreIcon } alt="explorar" data-testid="explore-bottom-btn" />
+      <img src={ exploreIcon } alt="explorar" data-testid="explore-bottom-btn" className="icon-white-footer"/>
     </Button>
     <Button
       href="/comidas"
       type="button"
-      className="btn btn-light"
     >
-      <img src={ mealIcon } alt="comidas" data-testid="food-bottom-btn" />
+      <img src={ mealIcon } alt="comidas" data-testid="food-bottom-btn" className="icon-white-footer"/>
     </Button>
   </div>
 );
