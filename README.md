@@ -1,12 +1,8 @@
 # Recipes App
-![GitHub language count](https://img.shields.io/github/languages/count/pabloalmeidac/recipes-app)
-![GitHub top language](https://img.shields.io/github/languages/top/pabloalmeidac/recipes-app)
-
-# Sobre o projeto
-
 Este repositório foi criado para colocar em prática os conhecimentos adquiridos no curso de Desenvolvimento Web da **Trybe** de um projeto do bloco de **Front-end**.
 
-O objetivo do projeto foi desenvolver um app de receitas com layout de dispositivos móveis, em que fosse possível possível ver, buscar, filtrar, favoritar e acompanhar o processo de preparação de receitas e drinks! A base de dados utilizada foram 2 APIs externas.
+# Sobre o projeto
+O objetivo do projeto foi desenvolver um app de receitas em grupo com layout de dispositivos móveis, em que fosse possível possível ver, buscar, filtrar, favoritar e acompanhar o processo de preparação de receitas e drinks! A base de dados utilizada foram 2 APIs externas.
 
 ### Habilidades do projeto
 
@@ -16,18 +12,17 @@ O objetivo do projeto foi desenvolver um app de receitas com layout de dispositi
 - Utilizar o React Hook useEffect
 - Criar Hooks customizados
 
-# Exemplos
+# Imagem do projeto
 
 ![login](https://raw.githubusercontent.com/pabloalmeidac/recipes-app/pabloalmeidac/src/images/recipes-app-login.png)
 
 ![explore](https://raw.githubusercontent.com/pabloalmeidac/recipes-app/pabloalmeidac/src/images/recipes-app-explore.png)
 
-
-
 # Tecnologias utilizadas
-
 - React.js
 - JavaScript
+- CSS
+- React Bootstrap
 - Local Storage
 - Context API
 
