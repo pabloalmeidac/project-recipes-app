@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Form, Button, FloatingLabel, Container } from 'react-bootstrap';
 import './styles/LoginPage.css';
 import PropTypes from 'prop-types';
+import cooking from '../images/cooking.svg';
 
 const LoginPage = ({ history }) => {
   /* ------SETANDO ESTADOS--------- */
@@ -49,49 +49,48 @@ const LoginPage = ({ history }) => {
   }, [inputsState]);
 
   return (
-    <Container className="login-container">
-      <h1 className="mb-4">Login</h1>
-      <Form>
-        <FloatingLabel
-          controlId="floatingInput"
-          label="Email"
-          className="mb-3"
-        >
-          <Form.Control
+    <div className="main-login">
+		<div className="left-login">
+			<h1> Faça login <br/> E crie receitas incriveis</h1>
+			<img className="left-login-image" src={ cooking }alt="Astronaulta flutuando" />
+		</div>
+		<div className="right-login">
+			<div className="card-login">
+				<h1>Login</h1>
+				<div className="textfield">
+					<label htmlFor="email">Usuário</label>
+					<input 
             type="email"
             placeholder="name@example.com"
             name="email"
+            id="email"
             onChange={ handleChange }
             value={ inputsState.email }
-            data-testid="email-input"
-          />
-        </FloatingLabel>
-        <FloatingLabel controlId="floatingPassword" label="Password">
-          <Form.Control
-            type="password"
+            data-testid="email-input" />
+				</div>
+				<div className="textfield">
+					<label htmlFor="password">Senha</label>
+					<input 
+            type="password" 
             placeholder="Password"
+            id="password"
             name="password"
             onChange={ handleChange }
             value={ inputsState.password }
-            data-testid="password-input"
-          />
-        </FloatingLabel>
-        <div className="d-grid gap-2 mt-2">
-          <Button
-            variant="success"
-            type="button"
-            size="lg"
-            style={ { backgroundColor: '#ea1d2c', border: '#ea1d2c' } }
-            disabled={ btnDisabledStatus }
-            onClick={ handleClick }
-            data-testid="login-submit-btn"
+            data-testid="password-input" />
+				</div>
+				<button 
+          className="btn-login" 
+          disabled={ btnDisabledStatus }
+          onClick={ handleClick }
+          data-testid="login-submit-btn" 
           >
-            Entrar
-          </Button>
-        </div>
-      </Form>
-    </Container>
-  );
+            Login
+        </button>
+			</div>
+		</div>
+	</div>
+  ); 
 };
 
 LoginPage.propTypes = {

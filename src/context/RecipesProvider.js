@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import RecipesContext from './RecipesContext';
 import recipeAPI from '../services/recipeAPI';
-// import theMealDBAPI from '../services/theMealDBAPI';
 
 function RecipesProvider({ children }) {
   const [recipes, setRecipes] = useState([]);
